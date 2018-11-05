@@ -9,8 +9,9 @@
     font-family: Helvetica, Arial;
 }
 
-.start
+.shooter .start
 {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,9 +20,10 @@
     font-size: 60px;
     text-transform: uppercase;
     opacity: 0.3;
+    cursor: pointer;
 }
 
-.score
+.shooter .score
 {
     position: absolute;
     top: 50%;
@@ -32,12 +34,12 @@
     opacity: 0.3;
 }
 
-.score .value
+.shooter .score .value
 {
     font-size: 120px;
 }
 
-.score .unit
+.shooter .score .unit
 {
     font-size: 30px;
     text-transform: uppercase;
@@ -69,8 +71,10 @@
     position: absolute;
     top: 25%;
     left: 25%;
-    width: 120px;
-    height: 120px;
+    width: 12vmin;
+    height: 12vmin;
+    margin-top: -6vmin;
+    margin-left: -6vmin;
     background: #eeeeee;
     border-radius: 50%;
     box-shadow: 5px 5px 15px #00000055;
